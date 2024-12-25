@@ -1,0 +1,13 @@
+/* style.css */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
