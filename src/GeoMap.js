@@ -112,9 +112,9 @@ export class GeoMap {
     // İlçe adını ayıkla
     let districtName = properties?.display_name;
     if (districtName) {
-        // display_name içinden sadece ilçe adını al
-        // Örnek: "Kadıköy, İstanbul, Türkiye" -> "Kadıköy"
-        districtName = districtName.split(',')[0].trim();
+      // display_name içinden sadece ilçe adını al
+      // Örnek: "Kadıköy, İstanbul, Türkiye" -> "Kadıköy"
+      districtName = districtName.split(",")[0].trim();
     }
 
     const mesh = new THREE.Mesh(geometry, material);
@@ -124,7 +124,7 @@ export class GeoMap {
 
     // İlçe etiketini ekle
     if (districtName) {
-        this.addDistrictLabel(districtName, mesh);
+      this.addDistrictLabel(districtName, mesh);
     }
 
     // Sınır çizgilerini ekle
